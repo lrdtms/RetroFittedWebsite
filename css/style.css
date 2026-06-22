@@ -3,14 +3,14 @@
 
 /* ===== VARIABLES ===== */
 :root {
-  --bg:       #111111;
-  --gold:     #F0C040;
+  --bg:       #000000;
+  --gold:     #FFFFFF;
   --white:    #FFFFFF;
-  --card:     #1C1C1C;
-  --divider:  #2A2A2A;
+  --card:     #050505;
+  --divider:  #111111;
   --font-headline: 'Bebas Neue', cursive;
   --font-body:     'Inter', sans-serif;
-  --nav-height: 60px;
+  --nav-height: 80px;
 }
 
 /* ===== RESET ===== */
@@ -36,10 +36,14 @@ nav {
 }
 
 .nav-brand {
-  font-family: var(--font-headline);
-  font-size: 1.8rem;
-  color: var(--gold);
-  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  height: 250px;
+  width: auto;
+  display: block;
 }
 
 .nav-links {
@@ -189,7 +193,9 @@ footer {
   padding: 5rem 2rem 4rem;
   text-align: center;
   border-bottom: 1px solid var(--divider);
+  position: relative;
 }
+
 
 .home-masthead {
   font-family: var(--font-headline);
@@ -214,13 +220,11 @@ footer {
   border-bottom: 1px solid var(--divider);
 }
 
-.home-grid-left {
-  border-right: 1px solid var(--divider);
-}
+.home-grid-left {}
 
 .home-editorial-block {
-  padding: 2.5rem 2rem;
-  border-bottom: 1px solid var(--divider);
+  padding: 2rem 2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 .home-editorial-block:last-child { border-bottom: none; }
@@ -234,10 +238,12 @@ footer {
 }
 
 .home-grid-right {
-  padding: 2.5rem 2rem;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-end;
+  text-align: right;
 }
 
 .pull-quote-large {
