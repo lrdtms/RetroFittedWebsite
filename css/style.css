@@ -153,6 +153,11 @@ footer {
   margin-bottom: 0.5rem;
 }
 
+.editorial-label.small {
+  font-size: 0.55rem;
+  opacity: 0.6;
+}
+
 .editorial-link {
   display: inline-block;
   color: var(--gold);
@@ -273,6 +278,10 @@ footer {
   color: rgba(255, 255, 255, 0.75);
   line-height: 1.9;
   font-size: 0.95rem;
+}
+
+.about-text p + p {
+  margin-top: 1rem;
 }
 
 .about-img {
