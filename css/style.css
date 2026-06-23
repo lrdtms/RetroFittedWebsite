@@ -1,6 +1,20 @@
 /* ===== FONTS ===== */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap');
 
+@font-face {
+  font-family: 'GraffitiSkater';
+  src: url('../assets/fonts/graffiti_skater/GraffitiSkater-DemoVersion-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'super_retro_m54';
+  src: url('../assets/fonts/super_retro_m54/Super Retro M54.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* ===== VARIABLES ===== */
 :root {
   --bg:       #000000;
@@ -41,7 +55,7 @@ nav {
 }
 
 .nav-logo {
-  height: 250px;
+  height: 40px;
   width: auto;
   display: block;
 }
@@ -196,13 +210,19 @@ footer {
   position: relative;
 }
 
+.home-hero-logo {
+  height: 130px;
+  width: auto;
+  display: block;
+  margin: 0 auto 1.5rem;
+}
 
 .home-masthead {
-  font-family: var(--font-headline);
+  font-family: 'super_retro_m54', var(--font-headline);
   color: var(--gold);
-  font-size: clamp(5rem, 18vw, 14rem);
-  letter-spacing: 0.01em;
-  line-height: 0.9;
+  font-size: clamp(1.2rem, 5.5vw, 5.5rem);
+  letter-spacing: 0.1em;
+  line-height: 1.1;
 }
 
 .home-subtitle {
